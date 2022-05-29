@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>Air Quality Search</h1>
+
+		<label for="countries">Country</label>
+		<select id="selectCountry" name="countries">
+			<option value="-">-</option>
+		</select>
+
+
+		<label for="states">State</label>
+		<select id="selectState" name="states">
+			<option value="-">-</option>
+		</select>
+
+
+		<label for="cities">City</label>
+		<select id="selectCity" name="cities">
+			<option value="-">-</option>
+		</select>
+
+		<h3 id="country">Country: USA</h3>
+		<h3 id="state">State: California</h3>
+		<h3 id="city">City: Los Angeles</h3>
+
+		<p id="timeStamp"></p>
+		<p id="tempCel"></p>
+		<p id="tempCelMin"></p>
+		<p id="humidity"></p>
+		<p id="windSpeed"></p>
+
+		<span> I had originally wanted to let the user to choose which city, but my requests kept getting rejected when choosing a city, which was pretty much the last step. If I had been able to fiddle with the API more, I would have liked to have fixed the select options so that the lower tier select options change as the higher tier options change. As of now, if I select USA and then change the country to somewhere else, the states' options still show the states from USA. The same goes for the city options.</span>
+
+		<span>As a place holder, I'm displaying the current weather for Los Angeles.</span>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
